@@ -21,7 +21,7 @@ def view_register(request):
         r.save()
         return HttpResponse('<p>data is added</p>')
     else:
-        return HttpResponse('<p>not the valid data</p>')
+        return HttpResponse('<p>not the a valid data</p>')
 
 
 def view_login(request):
