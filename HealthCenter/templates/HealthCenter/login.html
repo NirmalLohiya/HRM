@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+    <div>
+        <h1 align="center">Loin for your id</h1>
+    </div>
+    <div align="center" style="white-space: none; font-size: 30px;">
+        <label for="">Email</label>
+        <label for="" ><input name="lemail" type="text" style="height: 25px; width: 300px; border-radius: 4px; padding-left: 5px; font-size: 15px;"></label><br><br>
+        <label for="">password</label>
+        <label for=""><input name="lpassword" type="password" style="height: 25px; width: 300px; border-radius: 4px; padding-left: 5px; font-size: 15px;"></label>
+    </div>
+    <div align="center" style="margin-top: 20px;">
+        <button style="height: 30px; width: 100px; cursor: pointer;">Login</button>
+        <button style="height: 30px; width: 100px; cursor: pointer;"><a href="{% url 'register' %}">back</a></button>
+    </div>
+</form>
+</body>
+</html>

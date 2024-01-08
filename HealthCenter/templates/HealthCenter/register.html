@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+    <div>
+        <h2 align="center" style="font-size: 30px; padding: 20px 30px;"> wellcome registention area</h2>
+    </div>
+    <div>
+        <table border="0" align="center" style="font-size: 30px; padding: 20px 30px;" >
+            <tr>
+                <td>firstname</td>
+                <td><input name="firstname" type="text" style="height: 30px; width: 400px; border-radius: 5px; padding-left: 10px; font-size: 15px;"></td>
+            </tr>
+            <tr>
+                <td>lastname</td>
+                <td><input name="lastname" type="text" style="height: 30px; width: 400px; border-radius: 5px; padding-left: 10px; font-size: 15px;"></td>
+
+            </tr>
+            <tr>
+                <td>mailid</td>
+                <td><input name="email" type="text" style="height: 30px; width: 400px; border-radius: 5px; padding-left: 10px; font-size: 15px;"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input name="password" type="password" style="height: 30px; width: 400px; border-radius: 5px; padding-left: 10px; font-size: 15px;"></td>
+            </tr>
+        </table>
+        {{reg}}
+    </div>
+    <div align="center">
+        <button style="font-size: 30px;">Register</button>
+        <button style="font-size: 30px;"><a href="{% url 'home' %}">Back</a></button>
+    </div>
+</form>
+</body>
+
+</html>
